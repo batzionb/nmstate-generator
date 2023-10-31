@@ -1,8 +1,8 @@
-import { resolve } from 'pathe';
-import { defineConfig } from 'vite';
-import { WatcherOptions } from 'rollup';
-import dts from 'vite-plugin-dts';
-import react from '@vitejs/plugin-react';
+import { resolve } from "pathe";
+import { defineConfig } from "vite";
+import { WatcherOptions } from "rollup";
+import dts from "vite-plugin-dts";
+import react from "@vitejs/plugin-react";
 
 const watcherOptions: WatcherOptions = {};
 // https://vitejs.dev/config/
@@ -10,31 +10,29 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'NMState utilites library',
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "NMState utilites library",
       // the proper extensions will be added
-      fileName: 'nmstate-ui-lib',
-      formats: ['es'],
+      fileName: "nmstate-ui-lib",
+      formats: ["es"],
     },
     watch: watcherOptions,
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: [
-        'react',
-        'react-dom',
-        '@patternfly/react-core',
-        '@patternfly/react-icons',
-        '@patternfly/react-table',
-        '@patternfly/react-code-editor',
-        'react-monaco-editor',
-        'formik',
+        "react",
+        "react-dom",
+        "@patternfly/react-core",
+        "@patternfly/react-icons",
+        "@patternfly/react-table",
+        "formik",
       ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
-          react: 'React',
+          react: "React",
         },
       },
     },
