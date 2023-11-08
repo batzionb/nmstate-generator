@@ -1,14 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import NMStateYamlCodePanel from "./NMStateYamlCodePanel";
-import { nmstateConfig1 } from "../mocks/NMStateData";
 
 const NMStateYamlCodePanelPage = () => {
   return (
     <div style={{ height: "100vw", width: "100vw" }}>
-      <NMStateYamlCodePanel
-        nmstateConfig={nmstateConfig1}
-        updateNMStateConfig={(code) => console.log(code)}
-      />
+      <NMStateYamlCodePanel />
     </div>
   );
 };

@@ -16,8 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "noUnusedLocals": true,
-    "noImplicitReturns": false,
-    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitReturns": false
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -12,6 +12,7 @@
   "exports": {
     ".": {
       "import": "./dist/nmstate-ui-lib.js",
+      "source": "./dist/nmstate-ui-lib.js.map",
       "require": "./dist/nmstate-ui-lib.umd.cjs"
     }
   },
@@ -27,9 +28,10 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@monaco-editor/react": "^4.6.0",
     "js-yaml": "^4.1.0",
+    "json-schema": "^0.4.0",
     "lodash": "^4.17.21",
+    "monaco-types": "^0.1.0",
     "monaco-yaml": "^5.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -52,6 +54,7 @@
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
     "formik": "^2.2.9",
+    "monaco-editor": "^0.36.0",
     "pathe": "^1.0.0",
     "rollup": "^3.3.0",
     "storybook": "^7.5.2",

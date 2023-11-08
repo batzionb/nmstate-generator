@@ -16,6 +16,7 @@ export default defineConfig({
       fileName: "nmstate-ui-lib",
       formats: ["es"],
     },
+    sourcemap: true,
     watch: watcherOptions,
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
